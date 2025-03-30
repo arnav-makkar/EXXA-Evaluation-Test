@@ -1,7 +1,13 @@
-# GSoC Exxa Project: ALMA Autoencoder for 1250μm Continuum Observations
+# ALMA Autoencoder for 1250μm Continuum Observations
+
+## Results
+
+SSIM: 
+MSE: 
 
 ## 📌 Project Overview
 This project implements a convolutional autoencoder to reconstruct synthetic ALMA continuum observations (1250μm) from .fits files. The goal is to learn a compressed latent representation of astronomical images while preserving key structures.
+
 
 ## 🚀 Features
 - Handles .fits format using astropy.io.fits.
