@@ -1,51 +1,16 @@
-# ALMA Autoencoder for 1250μm Continuum Observations
+# Image-Based Task: ALMA Autoencoder for 1250μm Continuum Observations
+
+This project focuses on reconstructing astronomical images from .fits files using a convolutional autoencoder. The model compresses input images into a 256-dimensional latent space and reconstructs them while preserving essential features. Training is performed using a combination of Mean Squared Error (MSE) and Structural Similarity Index (SSIM) loss, ensuring both pixel-wise accuracy and perceptual similarity. The autoencoder is trained using an Adam optimizer with cosine annealing scheduling, leveraging GPU acceleration and mixed-precision computation for efficiency.
 
 ## Results
 
-SSIM: 
-MSE: 
+| Metric | Value    |
+|--------|---------|
+| **MSE (Mean Squared Error)** | 0.000077  |
+| **SSIM (Structural Similarity Index)** | 0.991275  |
 
-## 📌 Project Overview
-This project implements a convolutional autoencoder to reconstruct synthetic ALMA continuum observations (1250μm) from .fits files. The goal is to learn a compressed latent representation of astronomical images while preserving key structures.
+![alt text](epoch90.png)
+![alt text](mse-ssim.png)
 
-
-## 🚀 Features
-- Handles .fits format using astropy.io.fits.
-
-- Autoencoder with accessible latent space for analysis.
-
-- Quantitative metrics: Mean Squared Error (MSE) & Multiscale Structural Similarity (MS-SSIM).
-
-- Supports high-resolution images (600×600) with deep convolutional layers.
-
-- Visualization tools: Loss curves, reconstructed images, latent space projections.
-
-
-## 🛠 Model Architecture
-The autoencoder consists of:
-
-- Encoder
-
-    - 4 Convolutional layers (ReLU, BatchNorm, MaxPooling)
-
-    - Fully connected latent space (128-dimension)
-
-- Decoder
-
-    - Transposed convolutions with upsampling
-
-    - Sigmoid activation to match input range
-
-## 📊 Visualization
-- Reconstructed vs. Original Images
-
-- MSE and SSIM plots over epochs
-
-- Latent Space Visualization using t-SNE
-
-## 🚀 Future Improvements
-- Implement U-Net-based autoencoder for sharper reconstructions.
-
-- Add self-supervised contrastive learning in the latent space.
-
-- Train on higher resolution (1200×1200) images for ALMA-scale detail.
+## Link to trained model:
+https://drive.google.com/drive/folders/1IbIml7enPwxCMhQFm2hLLSX8pAnKvmHc?usp=sharing
