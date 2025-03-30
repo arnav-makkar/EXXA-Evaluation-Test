@@ -38,10 +38,7 @@ This dataset variation is useful for **model robustness testing**, as a more bal
 ![alt text](roc-precision_recall.png)
 ![alt text](confusion_matrix.png)
 
-| <!-- --> | <!-- -->
-|---|:--------------:|
-| Best Decision Threshold |0.653
-
+Best Decision Threshold: 0.653
 
 | Class        | Precision | Recall | F1-Score | Support |
 |-------------|-----------|--------|----------|---------|
