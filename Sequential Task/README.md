@@ -1,4 +1,4 @@
-# Sequential Task: Transit Classifier
+# Sequential Test: Transit Classifier
 
 This project implements a deep learning pipeline for detecting transit events in astronomical light curve data. The pipeline includes:
 
