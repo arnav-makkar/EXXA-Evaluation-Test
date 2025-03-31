@@ -35,17 +35,20 @@ This dataset variation is useful for **model robustness testing**, as a more bal
 
 
 ## Results on 10% Dataset
-![alt text](roc-precision_recall.png)
+![alt text](roc_curve.png)
+![alt text](precision-recall.png)
 ![alt text](confusion_matrix.png)
+![alt text](loss-accuracy.png)
 
-Best Decision Threshold: 0.653
+Best Decision Threshold: 0.702
+Weighted F1 Score: 0.98
 
 | Class        | Precision | Recall | F1-Score | Support |
 |-------------|-----------|--------|----------|---------|
 | No Transit  | 0.98      | 1.00   | 0.99     | 1016    |
-| Transit     | 0.99      | 0.86   | 0.92     | 127     |
+| Transit     | 0.96      | 0.87   | 0.91     | 127     |
 | **Accuracy**     |         |        | 0.98     | 1143    |
-| **Macro Avg**    | 0.99    | 0.93   | 0.96     | 1143    |
+| **Macro Avg**    | 0.97    | 0.93   | 0.95     | 1143    |
 | **Weighted Avg** | 0.98    | 0.98   | 0.98     | 1143    |
 
 ## Link to trained model:
